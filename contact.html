@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <style>
+            html, body{
+                height: 100%;
+                width: 100%;
+            }
+            html{
+                height: 100%;
+                width: 100%;
+            }
+            body {
+                margin: 0;
+                background-color: rgb(217, 223, 228);
+                min-height: 100%;
+                width: 100%;
+                display: grid;
+            }
+            header {
+                position: fixed;
+                width: auto;
+                background-color: rgb(33, 33, 94);
+                padding: 1%;
+                text-align: center;
+                font-size: 1.5vw;
+                position: relative;
+            }
+            .papa{
+                position: relative;
+                height: auto;
+            }
+            footer {
+                position: static;
+                left: 0;
+                bottom: 0;
+                width: auto;
+                background-color: black;
+                padding: 1%;
+                padding-top: 1.5%;
+                text-align: center;
+                font-size: 1.5vw;
+                margin-top: -1%;
+            }
+            a {
+                color: white;
+                text-transform: uppercase;
+                padding: 0px 30px;
+            }
+            .banner {
+                margin: 0;
+                max-width: 100%;
+                width: 100%;
+                max-height: 700px;
+                height: auto;
+                resize: both;
+            }
+            .form{
+                max-width: 100%;
+                max-height: 700px;
+                position: absolute;
+                height: auto;
+                width: 100%;
+                top: 5%;
+            }
+            form {
+                max-height: 700px;
+                width: 25%;
+                height: auto;
+                background-color: rgba(150, 156, 160, 0.288);
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            form h1 {
+                padding-top: 5%;
+                font-size: 2vw;
+                padding-bottom: 0;
+            }
+            .icon {
+                width: 100%;
+                padding: 5% 0px;
+                display: flex;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.288);
+            }
+            span img {
+                width: 10%;
+            }
+            div input, div button {
+                border: none;
+                border-bottom: 1px solid rgb(216, 226, 233);
+                width: 80%;
+                margin-top: 9%;
+                padding-bottom: 1%;
+                padding-top: 2%;
+                background-color: rgba(150, 156, 160, 0);
+                color: white;
+                font-size: 1vw;
+            }
+            input::placeholder {
+                color: white;
+                font-size: 1vw;
+            }
+            input:hover, input:hover::-webkit-input-placeholder{
+                border-color: rgba(37, 110, 245, 0.404);
+                color: rgba(37, 110, 245, 0.404);
+            }
+            input:focus, input:focus::placeholder{
+                color: rgba(37, 110, 245, 0.76);
+                border-color: rgba(37, 110, 245, 0.76);
+                outline: none;
+                font-size: 1vw;
+            }
+            .button {
+                background-color: rgba(37, 110, 245, 0.404);
+                color: white;
+                width: 25%;
+                padding: 2.5% 0;
+                border-bottom: none;
+                margin-bottom: 10%;
+                font-size: 1vw;
+            }
+            .button:hover{
+                background-color: rgba(37, 110, 245, 0.568);
+                cursor: pointer;
+                color: white;
+            }
+            input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+                -webkit-appearance: none; 
+                margin: 0; 
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <span class="header">
+                    <a href="/index.html">Trips</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                </span>
+            </header>
+            <div class="papa">
+                <img class="banner" src="/img/Contact_banner.jpg" alt="Contact"/>
+                <div class="form">
+                    <form autocomplete="off">
+                    <h1>Wanna join me?</h1>
+                    <span class="icon">
+                        <img src="/icons/ring.png" alt="ring" />
+                    </span>
+                    <div>
+                        <input type="text" placeholder="Username" autocomplete="off" required/><br />
+                        <input type="email" placeholder="Email" autocomplete="off" required/><br />
+                        <input type="number" placeholder="Contact Number" minlength="10" min="1" required/><br />
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <span class="footer">
+                    <a href="/index.html">Trips</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </span>
+        </footer>
+        </div>
+        </div>
+    </body>
+</html>

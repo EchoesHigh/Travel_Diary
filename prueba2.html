@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background-color: rgb(217, 223, 228);
+        min-height: 100%;
+      }
+
+      header {
+        position: fixed;
+        width: auto;
+        background-color: rgb(33, 33, 94);
+        padding: 1%;
+        text-align: center;
+        font-size: 1.5vw;
+        position: relative;
+      }
+
+      .contact {
+        max-height: 700px;
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        background: url(/img/Contact_banner.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+
+      footer {
+        left: 0;
+        bottom: 0;
+        width: auto;
+        background-color: black;
+        padding: 1%;
+        text-align: center;
+        font-size: 1.5vw;
+        position: relative;
+      }
+
+      a {
+        color: white;
+        text-transform: uppercase;
+        padding: 0px 30px;
+      }
+
+      .banner {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        max-height: 700px;
+        height: auto;
+        resize: both;
+        position: absolute;
+      }
+
+      .form {
+        max-height: 700px;
+        height: auto;
+      }
+
+      form {
+        border: 1px solid red;
+        width: 25%;
+        height: 100%;
+        background-color: rgba(150, 156, 160, 0.288);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      form h1 {
+        padding-top: 25px;
+        font-size: 2vw;
+        padding-bottom: 0px;
+      }
+
+      .icon {
+        width: 100%;
+        padding: 15px 0px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.288);
+      }
+
+      span img {
+        width: 10%;
+      }
+
+      div {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      div input {
+        border: none;
+        border-bottom: 1px solid rgb(216, 226, 233);
+        width: 80%;
+        margin-top: 10%;
+        padding-bottom: 1%;
+        background-color: rgba(150, 156, 160, 0);
+      }
+
+      input::placeholder {
+        color: white;
+      }
+
+      .button {
+        background-color: rgba(37, 110, 245, 0.404);
+        color: white;
+        width: 85px;
+        padding: 8px 0px;
+        border-bottom: none;
+        margin-bottom: 10%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <span class="header">
+          <a href="/index.html">Trips</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+        </span>
+      </header>
+      <div class="">
+        <div class="form">
+          <form>
+            <h1>Wanna join me?</h1>
+            <span class="icon">
+              <img src="/icons/ring.png" alt="ring" />
+            </span>
+            <div>
+              <input type="text" placeholder="Username" /><br />
+              <input type="email" placeholder="Email" /><br />
+              <input type="number" placeholder="Contact Number" /><br />
+              <input class="button" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <span class="footer">
+          <a href="/index.html">Trips</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
